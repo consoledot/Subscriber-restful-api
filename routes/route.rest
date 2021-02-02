@@ -1,0 +1,26 @@
+GET http://localhost:4000/subscribers
+
+###
+POST http://localhost:4000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Make Tabour",
+    "subscribedToChannel": "C# uni"
+}
+
+###
+GET http://localhost:4000/subscribers/60194f513f5a404d34a8ad7a
+
+###
+
+DELETE  http://localhost:4000/subscribers/60194f513f5a404d34a8ad7a
+
+### 
+
+PATCH  http://localhost:4000/subscribers/60194fca6354fd638069f042
+Content-Type: application/json
+
+{
+    "name": "EREN"
+}
